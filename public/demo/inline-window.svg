@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e6e4d5"/>
+      <stop offset="1" stop-color="#cfd5c2"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="560" fill="url(#bg)"/>
+  <path d="M150 512V220c0-89 63-137 135-137s135 48 135 137v292Z" fill="#eef0e5"/>
+  <path d="M150 512V220c0-89 63-137 135-137s135 48 135 137v292Z" fill="none" stroke="#876f58" stroke-width="1.5" opacity="0.5"/>
+  <path d="M285 83v429M150 262h270" stroke="#876f58" stroke-width="1" opacity="0.35"/>
+  <circle cx="355" cy="180" r="48" fill="#e6bd83" opacity="0.7"/>
+  <path d="M622 512c-5-124 11-222 54-296" fill="none" stroke="#385640" stroke-width="2.1"/>
+  <path d="M666 276c-43-5-69-26-76-63 38-9 68 10 76 63Z" fill="#537158"/>
+  <path d="M646 358c42-28 80-28 113 0-26 33-63 39-113 0Z" fill="#6e886a"/>
+  <g fill="#c97d5f">
+    <ellipse cx="694" cy="197" rx="20" ry="34"/>
+    <ellipse cx="694" cy="197" rx="20" ry="34" transform="rotate(72 694 197)"/>
+    <ellipse cx="694" cy="197" rx="20" ry="34" transform="rotate(144 694 197)"/>
+    <ellipse cx="694" cy="197" rx="20" ry="34" transform="rotate(216 694 197)"/>
+    <ellipse cx="694" cy="197" rx="20" ry="34" transform="rotate(288 694 197)"/>
+  </g>
+  <circle cx="694" cy="197" r="12" fill="#e2bb79"/>
+  <path d="M480 512h420" stroke="#856b52" stroke-width="10" stroke-linecap="round"/>
+  <path d="M596 512h82l-9 0h-64Z" fill="#b0795a"/>
+  <text x="662" y="470" font-family="Georgia, serif" font-size="12" letter-spacing="3" fill="#54634f" opacity="0.7">A QUIET CORNER</text>
+  <rect width="1000" height="560" filter="url(#grain)" opacity="0.6"/>
+</svg>

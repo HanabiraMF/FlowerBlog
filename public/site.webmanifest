@@ -1,0 +1,17 @@
+{
+  "name": "FlowerBlog",
+  "short_name": "FlowerBlog",
+  "description": "在字里行间，种下一朵花。",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3ea",
+  "theme_color": "#173f32",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0e5db"/>
+      <stop offset="1" stop-color="#ddcbc2"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf5e8"/>
+      <stop offset="1" stop-color="#eee0cb"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1000" height="560" fill="url(#bg)"/>
+  <circle cx="810" cy="120" r="140" fill="#d2a18a" opacity="0.35"/>
+  <g transform="translate(215 135) rotate(-4 280 150)">
+    <rect width="560" height="330" rx="4" fill="url(#paper)" stroke="#b79782" stroke-width="1" />
+    <path d="M0 46h560" stroke="#cbb8a4"/>
+    <path d="M46 94h230M46 118h350M46 142h280M46 166h330" stroke="#b9a48f" stroke-width="1.1" opacity="0.5"/>
+    <path d="M46 220h180M46 244h240" stroke="#b9a48f" stroke-width="1.1" opacity="0.35"/>
+    <path d="M460 265c-8-31 0-55 24-72 13 28 5 52-24 72Z" fill="#5e755b"/>
+    <circle cx="490" cy="278" r="11" fill="#bd7a68"/>
+    <text x="46" y="294" font-family="Georgia, serif" font-size="13" letter-spacing="2" fill="#7d5b50" opacity="0.7">WITH LOVE, NOW.</text>
+  </g>
+  <path d="M785 420c-2-61 15-109 51-145" fill="none" stroke="#425e47" stroke-width="1.7" opacity="0.8"/>
+  <path d="M822 315c-30-5-47-23-51-51 28-4 47 14 51 51Z" fill="#667f67"/>
+  <g fill="#b96e61">
+    <ellipse cx="840" cy="265" rx="14" ry="25"/>
+    <ellipse cx="840" cy="265" rx="14" ry="25" transform="rotate(72 840 265)"/>
+    <ellipse cx="840" cy="265" rx="14" ry="25" transform="rotate(144 840 265)"/>
+    <ellipse cx="840" cy="265" rx="14" ry="25" transform="rotate(216 840 265)"/>
+    <ellipse cx="840" cy="265" rx="14" ry="25" transform="rotate(288 840 265)"/>
+  </g>
+  <circle cx="840" cy="265" r="9" fill="#dbba83"/>
+  <rect width="1000" height="560" filter="url(#grain)" opacity="0.65"/>
+</svg>

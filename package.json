@@ -1,0 +1,45 @@
+{
+  "name": "flowerblog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FlowerBlog — a modern, free-to-deploy blog for Cloudflare Workers, D1 and R2.",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c green,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "predev": "vite build",
+    "dev:api": "wrangler dev --port 8787",
+    "dev:web": "vite --port 5173",
+    "build": "vite build",
+    "check": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.worker.json --noEmit",
+    "preview": "wrangler dev --port 8787",
+    "deploy": "npm run build && wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply flowerblog-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply flowerblog-db --remote",
+    "setup:local": "npm run db:migrate:local && npm run build"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "dompurify": "^3.4.17",
+    "hono": "^4.13.14",
+    "lucide-react": "^1.64.0",
+    "marked": "^18.1.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261029.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "wrangler": "^4.155.0"
+  }
+}

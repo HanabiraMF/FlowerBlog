@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f5b48"/>
+      <stop offset="1" stop-color="#183c2e"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <circle cx="194" cy="46" r="34" fill="#e6cfa2" opacity="0.16"/>
+  <g transform="translate(120 116)">
+    <g fill="#e8d5af">
+      <ellipse cx="0" cy="-42" rx="26" ry="42"/>
+      <ellipse cx="0" cy="-42" rx="26" ry="42" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-42" rx="26" ry="42" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-42" rx="26" ry="42" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-42" rx="26" ry="42" transform="rotate(288)"/>
+    </g>
+    <circle r="17" fill="#d29a6f"/>
+  </g>
+  <path d="M38 214c18-69 45-104 82-118" fill="none" stroke="#9aaf91" stroke-width="1.2" opacity="0.55"/>
+  <path d="M92 124c-22-2-35-14-39-34 20-3 35 8 39 34Z" fill="#7d9879" opacity="0.8"/>
+  <path d="M200 218c-6-47-23-77-50-91" fill="none" stroke="#9aaf91" stroke-width="1" opacity="0.4"/>
+  <rect width="240" height="240" filter="url(#grain)" opacity="0.7"/>
+</svg>

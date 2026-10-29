@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e9dfd5"/>
+      <stop offset="1" stop-color="#d9c8c0"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf6ea"/>
+      <stop offset="1" stop-color="#f0e4d1"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.055"/></feComponentTransfer>
+    </filter>
+    <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <circle cx="1010" cy="130" r="190" fill="#cf9e86" opacity="0.35"/>
+  <ellipse cx="600" cy="640" rx="360" ry="30" fill="#6b4a45" opacity="0.16" filter="url(#shadow)"/>
+
+  <g transform="translate(292 190) rotate(-5 320 220)">
+    <rect x="0" y="0" width="580" height="400" rx="6" fill="url(#paper)" stroke="#b79782" stroke-width="1.2"/>
+    <path d="M0 52h580" stroke="#cbb8a4" stroke-width="1"/>
+    <path d="M56 110h300M56 140h380M56 170h330M56 200h360" stroke="#b9a48f" stroke-width="1.2" opacity="0.55"/>
+    <path d="M56 258h230M56 286h290" stroke="#b9a48f" stroke-width="1.2" opacity="0.4"/>
+    <g fill="#6a4050">
+      <circle cx="463" cy="302" r="25" fill="none" stroke="#6a4050" stroke-width="1.2" opacity="0.5"/>
+      <path d="M452 302c8-18 19-18 27 0-9 14-19 14-27 0Z" fill="#6a4050" opacity="0.7"/>
+    </g>
+    <text x="56" y="370" font-family="Georgia, serif" font-size="15" fill="#7d5b50" letter-spacing="2" opacity="0.7">FOR MY FUTURE SELF</text>
+  </g>
+
+  <g transform="translate(878 380)">
+    <path d="M-120 120c-30-100-4-196 58-256" fill="none" stroke="#405c48" stroke-width="2.4" opacity="0.85"/>
+    <path d="M-58-132c-45-8-71-33-76-70 42-7 71 15 76 70Z" fill="#5a765e"/>
+    <path d="M-82-42c42-30 82-30 111 0-27 34-64 40-111 0Z" fill="#758c73"/>
+    <ellipse cx="25" cy="-70" rx="30" ry="48" fill="#c58472" transform="rotate(24 25 -70)"/>
+    <ellipse cx="58" cy="-20" rx="27" ry="43" fill="#b56a61" transform="rotate(58 58 -20)"/>
+    <ellipse cx="-6" cy="-15" rx="25" ry="40" fill="#dca18c" transform="rotate(-24 -6 -15)"/>
+    <circle cx="20" cy="-34" r="17" fill="#dfba7f"/>
+  </g>
+
+  <g fill="none" stroke="#6a4050" stroke-width="1.2" opacity="0.45">
+    <path d="M830 570c46-28 95-27 146 2"/>
+    <path d="M842 586c30-14 62-13 96 2"/>
+  </g>
+
+  <g font-family="Georgia, serif" fill="#5d3f49">
+    <text x="76" y="92" font-size="13" letter-spacing="4" opacity="0.7">LETTERS IN A BOX</text>
+    <text x="1124" y="680" font-size="12" letter-spacing="3" opacity="0.55" text-anchor="end">TO THE FUTURE</text>
+  </g>
+  <rect width="1200" height="750" filter="url(#grain)" opacity="0.65"/>
+</svg>
