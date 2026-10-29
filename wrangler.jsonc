@@ -20,10 +20,10 @@
       "migrations_dir": "migrations"
     }
   ],
-  "r2_buckets": [
-    {
-      "binding": "IMAGES",
-      "bucket_name": "flowerblog-images"
-    }
-  ]
+//  "r2_buckets": [
+//    {
+//      "binding": "IMAGES",
+//      "bucket_name": "flowerblog-images"
+//    }
+//  ]
 }
