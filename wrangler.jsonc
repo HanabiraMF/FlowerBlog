@@ -16,7 +16,7 @@
     {
       "binding": "DB",
       "database_name": "flowerblog-db",
-      "database_id": "00000000-0000-4000-8000-000000000000",
+      "database_id": "83a129d5-de76-4b25-a17e-800e5ee5ec3d",
       "migrations_dir": "migrations"
     }
   ],
